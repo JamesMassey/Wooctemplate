@@ -1,11 +1,11 @@
 /* Body styling */
 
 body {
-  background: white;/* c */
+	background: white;/* c */
   background-position:top left;/* c */
   background-repeat:no-repeat;/* c */
-  background-attachment:scroll;/* c */
-  border-top:0px solid #000000;/* c */
+	background-attachment:scroll;/* c */
+	border-top:0px solid #000000;/* c */
 
 }
 
@@ -64,33 +64,15 @@ If you are using a logo it shoudl be loaded via the them options in canvas.
 /* Styling for logo text only use if not using a logo */
 
 #logo .site-title a {
-  font:bold 40px/1em "Helvetica Neue", Helvetica, sans-serif;
-  color:#222222;
+	font:bold 40px/1em "Helvetica Neue", Helvetica, sans-serif;
+	color:#222222;
 }
 #logo .site-description {
 
-  font:300 13px/1em "Helvetica Neue", Helvetica, sans-serif;
-  color:#999999;
+	font:300 13px/1em "Helvetica Neue", Helvetica, sans-serif;
+	color:#999999;
 }
 
-#slogan {
-  font: 20px "Lucida Grande", Helvetica, sans-serif;
-  margin-top: 100px;
-  margin-left: 20px;
-  float: left;
-  font-style: italic;
-}
-
-#header-address {
-  float: right;
-  font-size: 10px !important;
-  margin-top: 30px;
-}
-
-#header-address p {
-  font:"Lucida Grande", Helvetica, sans-serif;
-  font-size: 13px;
-}
 
 
 /* Navigation styling - desktop */
@@ -112,7 +94,7 @@ If you are using a logo it shoudl be loaded via the them options in canvas.
     color: white;/* c */
   }
   ul.nav li a:hover {
-    color: white;
+  	color: white;
     text-decoration: none;
     background: #cb6e00!important;/* c */
     border-left: none;
@@ -125,7 +107,7 @@ ul.nav li ul li a {
 
 
   ul.nav li ul li a:hover {
-    color: white!important; /* c */
+  	color: black!important; /* c */
     text-decoration: none;
   }
 
@@ -164,12 +146,11 @@ ul.nav li ul li a {
   ul.nav li.current-menu-ancestor a,
   ul.nav li.current-cat a,
   ul.nav li.current-menu-item a {
-    background: #cb6e00;
-    color: white;
+    color: red !important;
   }
   /*#wrapper #navigation ul.rss  { top: 0; right: 0; float: right; border: none; margin-bottom: 0; padding: 0 10px 0 0; }
-    #wrapper #navigation ul.rss li  { margin: 0; display: inline; }
-    #wrapper #navigation ul.rss li a  { padding: 13px 5px; }*/
+  	#wrapper #navigation ul.rss li  { margin: 0; display: inline; }
+  	#wrapper #navigation ul.rss li a  { padding: 13px 5px; }*/
   /* 2. TOP NAVIGATION (Add top navigation presentational styles here) */
   #top {
     background: #000;
@@ -247,9 +228,6 @@ ul.nav li ul li a {
     -moz-border-radius: 0;/* c */
     -webkit-border-radius: 0;/* c */
     display: block !important;/* c */
-
-    text-transform: uppercase;
-    font-weight: bold;
   }
   #navigation h3 {
     display: none;
@@ -285,11 +263,11 @@ ul.nav li ul li a {
     background: #f6f6f6;
   }
   #navigation ul.nav > li:hover {
-    background: transparent;
+    background: #f6f6f6;
   }
   #navigation ul.nav ul {
-    background: darkorange;/* c */
-    border: 0px solid #00e8fd;/* c */
+    background: red;/* c */
+    border: 5px solid #00e8fd;/* c */
     left: -1px;/* c */
   }
 
@@ -297,14 +275,11 @@ ul.nav li ul li a {
 /* Fullwidth  nav styling */
 
 #nav-container {
-  border: none !important;
+  border: 1px solid #d9d9d9;
   border-width: 1px;
-  background: transparent url("images/Nav-BG.png");/* c */
-  margin: 0 0 0 0;
+  background: orange url("images/Nav-BG-full-width.jpg");/* c */
+  margin: 0 0 1em 0;
   height: 50px;
-  border-left: none !important;
-  z-index: 100;
-  position: relative;
 }
 
 
@@ -357,10 +332,6 @@ ul.nav li ul li a {
     color: #222;
   }
 
-  #navigation ul#main-nav > li:first-child {
-    border-left: none !important;
-  }
-
 
   /* Slider styling */
 
@@ -371,19 +342,17 @@ ul.nav li ul li a {
   */
 
     .business #loopedSlider .content {
-      
-
+      overflow: hidden;
       display: block;
-      background: transparent;
-      width: 20%;
-      right: 30px;  /* only use this if yo uwant to float the contant to the right */
-      left:auto; /* if you want to flaot contetn to the right set left to auto */
-      z-index: 50;
-    }
+        background: red;
+         width: 80%;
+        /* right: 0; */ /* only use this if yo uwant to float the contant to the right */
+        left:auto; /* if you want to flaot contetn to the right set left to auto */
+      }
 
     .business #loopedSlider .content h2 {
-        font:normal 24px/1em Arial, sans-serif;/* c */
-        color:white;/* c */
+        font:bold 24px/1em Arial, sans-serif;/* c */
+        color:green;/* c */
         padding: 10px 0 20px 20px;
        
       }
@@ -398,8 +367,8 @@ ul.nav li ul li a {
 
        .business #loopedSlider .title {
         display: block;
-        background: transparent;/* c */
-        background: rgba(0, 0, 0, 0);/* c */
+        background: #000000;/* c */
+        background: rgba(0, 0, 0, 0.9);/* c */
         max-width:100%;/* c */
         width: 100%;/* c */
         padding: 0;/* c */
@@ -408,10 +377,10 @@ ul.nav li ul li a {
       }
 
     .business #loopedSlider .excerpt{
-        font:normal 13px/1.5em Arial, sans-serif;/* c */
-        color: white;/* c */
-        background: transparent;/* c */
-        /* background: rgba(250, 250, 250, 0.5); c */
+        font:bold 13px/1.5em Arial, sans-serif;/* c */
+        color: black;/* c */
+        background: #fff;/* c */
+        background: rgba(250, 250, 2500, 0.9);/* c */
         max-width:80%;/* c */
         width: 100%;/* c */
         padding: 10px 0 20px 20px;/* c */
@@ -426,16 +395,10 @@ ul.nav li ul li a {
       }
 
       #main-sidebar-container .pagination-wrap{
-        background: transparent !important;
+        background: green!important;
         display: block;
-        width: 20%;
+        width: 45%;
         height: 20px;
-        
-        right: 0;
-        margin-top: -50px;
-        position: absolute;
-
-        z-index: 50;
       }
 
 
@@ -464,51 +427,32 @@ ul.nav li ul li a {
       /* Slider pagination styling */
 
 #loopedSlider .pagination li a, #loopedSlider .flex-control-nav li a, .slider-pagination a {
-  display: block;
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  text-indent: -9999px;
-  background: grey;/* c */
-  border-radius: 300px;
-  -moz-border-radius: 300px;
-  -webkit-border-radius: 300px;
+display: block;
+cursor: pointer;
+width: 10px;
+height: 10px;
+text-indent: -9999px;
+background: black;/* c */
+border-radius: 300px;
+-moz-border-radius: 300px;
+-webkit-border-radius: 300px;
 }
 
 #loopedSlider .pagination li.current a, #loopedSlider .flex-control-nav li .flex-active, .slider-pagination .flex-active a {
-background: white;/* c */
+background: yellow;/* c */
 }
 
- .adsoverlay {
-      position: absolute;
-      top:0; 
-      right:0px;
-      background: transparent url('images/slider-bg.png')no-repeat !important;
-      height:100%;
-      width:428px;
-      z-index: 20;
-      display: block;
-  }
-
-.flex-direction-nav {display: none;}
 
 /* Content */
 
 #content {
-  margin-top: -6px;
 padding: 0 0 40px;
 position: relative;
-z-index: 90;
 }
 
 #main-sidebar-container #main {
-  background: transparent;/* c */
+  background: white;/* c */
 position: relative;
-}
-
-#main {
-  border-top: 3px solid #ef8200;
-  padding-top: 30px;
 }
 
 
@@ -517,38 +461,38 @@ position: relative;
 body, p {
 
   font:300 14px/1.5em "Helvetica Neue", Helvetica, sans-serif;
-  color:black;/* c */
+  color:red;/* c */
 }
 h1 {
 
   font:bold 28px/1.2em "Helvetica Neue", Helvetica, sans-serif;
-  color:#ef8200;/* c */
+  color:green;/* c */
 }
 h2 {
 
   font:bold 24px/1.2em "Helvetica Neue", Helvetica, sans-serif;
-  color:#ef8200;/* c */
+  color:blue;/* c */
 }
 h3 {
   font:bold 20px/1.2em "Helvetica Neue", Helvetica, sans-serif;
-  color:#ef8200;/* c */
+  color:yellow;/* c */
 }
 h4 {
   font:bold 16px/1.2em "Helvetica Neue", Helvetica, sans-serif;
-  color:#ef8200;/* c */
+  color:orange;/* c */
 }
 h5 {
   font:bold 14px/1.2em "Helvetica Neue", Helvetica, sans-serif;
-  color:#ef8200;/* c */
+  color:grey;/* c */
 }
 h6 {
   font:bold 12px/1.2em "Helvetica Neue", Helvetica, sans-serif;
-  color:#ef8200;/* c */
+  color:pink;/* c */
 }
 
 .entry, .entry p{
   font:300 15px/1.5em "Helvetica Neue", Helvetica, sans-serif;
-  color:black;/* c */
+  color:green;/* c */
 }
 
 .entry, .entry p ul li{
@@ -565,29 +509,23 @@ text-decoration: none;
 
 /* size of images controlled by shortcode within theme */
 .WPSF-features img {
-  margin-bottom: 10px;/* c */
-  padding: 2px;/* c */
-  border: 0px solid #ddd;/* c */
-  background: transparent;/* c */
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);/* c */
-  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);/* c */
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);/* c */
+margin-bottom: 10px;/* c */
+padding: 2px;/* c */
+border: 1px solid #ddd;/* c */
+background: yellow;/* c */
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);/* c */
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);/* c */
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);/* c */
 }
 
 .WPSF-features h3 {
-  font:bold 20px/1.2em "Lucida Grande", Helvetica, sans-serif;
-  color: #ef8200;/* c */
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  font:bold 20px/1.2em "Helvetica Neue", Helvetica, sans-serif;
+  color: red;/* c */
 }
 
 .WPSF-feature-txt {
-  font:300 15px/1.5em "Lucida Grande", Helvetica, sans-serif;
-  color:black;/* c */
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  font:300 15px/1.5em "Helvetica Neue", Helvetica, sans-serif;
+  color:blue;/* c */
 }
 
 .post .title, .page .title, .post .title a:link, .post .title a:visited, .page .title a:link, .page .title a:visited {
@@ -656,19 +594,15 @@ text-decoration: none;
 
 /* Archive styling */
 
-    .archive_header {
-        font:bold 18px/1em Arial, sans-serif;
-        color:#222222;
-      }
-    .archive_header {
-        border-bottom:1px solid #e6e6e6;
-      }
+		.archive_header {
+				font:bold 18px/1em Arial, sans-serif;
+				color:#222222;
+			}
+		.archive_header {
+				border-bottom:1px solid #e6e6e6;
+			}
 
 /* Footer styling */
-
-    #footer-container {
-      background: #ececec;
-    }
 
     #footer, #footer p {
         font:300 13px/1.4em "Helvetica Neue", Helvetica, sans-serif;
@@ -681,7 +615,7 @@ text-decoration: none;
       }
 
     #footer {
-        background: transparent;/* c */
+        background: grey;/* c */
         border-top:1px solid #dbdbdb;/* c */
         border-bottom:0px solid ;/* c */
         border-left:0px solid ;/* c */
